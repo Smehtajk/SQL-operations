@@ -1,4 +1,4 @@
---A/B testing : One of the two modal pop-ups to be shown to two group of users-control and variant. modal_text shows important features of the site to users
+#A/B testing : One of the two modal pop-ups to be shown to two group of users-control and variant. modal_text shows important features of the site to users
 
 SELECT modal_text,
   COUNT( CASE WHEN ab_group = 'control' THEN user_id
@@ -8,3 +8,4 @@ SELECT modal_text,
 FROM onboarding_modals
 GROUP BY 1
 ORDER BY 1;
+
